@@ -1,4 +1,4 @@
-package com.zhukm.configuration;
+package com.zhukm;
 
 
 import java.util.ArrayList;

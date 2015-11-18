@@ -1,0 +1,14 @@
+#datasource configuration
+datasource: 
+  mssql:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://10.1.53.58:1433;DatabaseName=test
+    username: sa
+    password: 123456
+    
+#Mvc configuration
+spring:
+  view:
+    prefix: /WEB-INF/view/
+    suffix: .jsp
+    
