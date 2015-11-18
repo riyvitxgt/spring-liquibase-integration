@@ -7,13 +7,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-liquibase-integration Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.2.7.RELEASE</version>
 	</parent>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,14 +49,18 @@
 			<artifactId>quartz</artifactId>
 			<version>1.8.4</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>spring-liquibase-integration</finalName>
-		 <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
 	</build>
 </project>

@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @SpringBootApplication
 @RestController
-@RequestMapping(value="/")
+@RequestMapping(value="/spring-liquibase-integration")
 public class Application extends SpringBootServletInitializer{
 	public static void main(String[] args){
 		SpringApplication.run(Application.class, args);
