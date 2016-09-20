@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: classpath:changeLogs/person.yaml
+      relativeToChangelogFile: false

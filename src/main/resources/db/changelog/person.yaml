@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 20160920
+    author: zhukm
+    changes:
+    - createTable:
+        columns:
+        - column:
+            name: address
+            type: varchar(255)
+        remarks: 创建person表
+        tableName: person

@@ -1,14 +1,15 @@
-#datasource configuration
-datasource: 
-  mssql:
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://10.1.53.58:1433;DatabaseName=test
-    username: sa
-    password: 123456
-    
-#Mvc configuration
 spring:
-  view:
-    prefix: /WEB-INF/view/
-    suffix: .jsp
+  datasource: 
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.1.53.58:3306/liquibaseTest2?autoReconnect=true
+    username: root
+    password: 123456
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: mysql
+    open-in-view: false
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
     
